@@ -19,4 +19,5 @@ Today we're going to develop an elegant React.js Music Application. The goal  is
 
 
 License: MIT
+
 Author: Mercy Faith Nyambura Kariuki

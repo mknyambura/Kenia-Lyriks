@@ -20,7 +20,7 @@ const NavLinks = ({ handleClick }) => (
       <NavLink
         key={item.name}
         to={item.to}
-        className="flex flex-row justify-start items-center my-8 text-sm font-medium text-gray-400 hover:text-lime-400 cursor-pointer"
+        className="flex flex-row justify-start items-center my-8 text-sm font-medium text-gray-400 hover:text-lime-400"
         onClick={() => handleClick && handleClick()}
       >
         <item.icon className="w-6 h-6 mr-2" />
@@ -43,8 +43,8 @@ const Sidebar = () => {
       {/* Mobile sidebar */}
       <div className="absolute md:hidden block top-6 right-3">
         { mobileMenuOpen ? (
-          <RiCloseLine className="w-6 h-6 mr-2 text-white" onClick={() => setMobileMenuOpen(false)} />
-        ) : <HiOutlineMenu className="w-6 h-6 mr-2 text-white" onClick={() => setMobileMenuOpen(true)} />
+          <RiCloseLine className="w-6 h-6 mr-2 text-white cursor-pointer" onClick={() => setMobileMenuOpen(false)} />
+        ) : <HiOutlineMenu className="w-6 h-6 mr-2 text-white cursor-pointer" onClick={() => setMobileMenuOpen(true)} />
         }
       </div>
 
